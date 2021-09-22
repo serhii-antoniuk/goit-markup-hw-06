@@ -495,8 +495,33 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form-field">
+          <form action="#" class="footer-form">
+            <p class="footer-title">Подпишитесь на рассылку</p>
+            <label for="mail"></label>
+            <input
+              type="mail"
+              id="mail"
+              class="footer-form-input"
+              placeholder="E-mail"
+              name="mail"
+              autofocus
+            />
+
+            <button class="footer-button current" type="submit">
+              <div class="btn-footer">
+                <span class="footer-tex-button">Подписаться</span>
+
+                <svg class="form-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-plane"></use>
+                </svg>
+              </div>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close type="button" class="btn-close">
@@ -504,6 +529,88 @@
             <use href="./images/sprite.svg#icon-Vector"></use>
           </svg>
         </button>
+        <form action="#" class="modal-form">
+          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="modal-form-field" role="input-box">
+            <label for="input-name" class="modal-form-lable">Имя</label>
+            <span class="input-wrap">
+              <input
+                type="text"
+                id="input-name"
+                class="modal-form-input"
+                placeholder="Иван Иванов"
+                name="modal-name"
+              />
+              <svg class="modal-form-icon" width="12" height="12">
+                <use href="./images/sprite.svg#icon-user"></use>
+              </svg>
+            </span>
+          </div>
+          <div class="modal-form-field" role="input-box">
+            <label for="input-tel" class="modal-form-lable">Телефон</label>
+            <span class="input-wrap">
+              <input
+                type="tel"
+                id="input-tel"
+                class="modal-form-input"
+                placeholder="+380888888888"
+                name="modal-name"
+              />
+              <svg class="modal-form-icon" width="12" height="12">
+                <use href="./images/sprite.svg#icon-tel"></use>
+              </svg>
+            </span>
+          </div>
+          <div class="modal-form-field" role="input-box">
+            <label for="input-email" class="modal-form-lable">Почта</label>
+            <span class="input-wrap">
+              <input
+                type="email"
+                id="input-email"
+                class="modal-form-input"
+                placeholder="ivan@mail"
+                name="modal-name"
+              />
+              <svg class="modal-form-icon" width="12" height="12">
+                <use href="./images/sprite.svg#icon-email"></use>
+              </svg>
+            </span>
+          </div>
+          <div class="modal-form-field">
+            <label for="comment" class="modal-form-lable">Комментарий</label>
+            <textarea
+              name="modal-comment"
+              id="comment"
+              placeholder="Введите текст"
+              class="modal-comment"
+            ></textarea>
+          </div>
+          <div class="modal-form-field">
+            <input
+              type="checkbox"
+              id="check"
+              name="policy"
+              class="visually-hidden checkbox"
+            />
+            <label for="check" class="check-lable">
+              <span class="icon-check">
+                <svg class="" width="11" height="8">
+                  <use href="./images/sprite.svg#icon-checked"></use>
+                </svg>
+              </span>
+              Соглашаюсь с рассылкой и принимаю
+
+              <a href="" class="check-link">Условия договора</a>
+            </label>
+          </div>
+          <button
+            class="filter-button-hero current"
+            type="submit"
+            data-modal-open
+          >
+            Отправить
+          </button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
